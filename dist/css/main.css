@@ -1,0 +1,50 @@
+html, body {
+  padding: 0;
+  margin: 0; }
+
+.section {
+  width: 100vw;
+  height: 100vh; }
+  .section-1 {
+    background: dodgerblue; }
+  .section-2 {
+    background: tomato; }
+  .section-3 {
+    background: lightgreen; }
+
+.toast {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+  .toast .toast-container {
+    background-color: #2c2c2c;
+    color: white;
+    font-size: 20px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    animation: toast-in;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    transition: transform 0.5s; }
+    .toast .toast-container.remove {
+      transform: translateX(150%); }
+    .toast .toast-container.success {
+      border: 1px solid greenyellow; }
+@keyframes toast-in {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0%); } }
+  .toast-header {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0.5rem; }
+  .toast-container {
+    float: left; }
+
+/*# sourceMappingURL=main.css.map */
